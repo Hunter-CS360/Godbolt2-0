@@ -25,54 +25,47 @@
       role="navigation"
       style="background-color: #428bca; border: 0px; border-radius: 0px;"
     >
-      <div class="container">
-        <div class="navbar-header">
-          <div class="btn-group">
-            <button
-              type="button"
-              class="btn btn-success navbar-btn"
-              ng-click="load()"
-            >
-              <span class="glyphicon glyphicon-play"></span> Load
-            </button>
-            <button
-              type="button"
-              class="btn btn-default navbar-btn"
-              ng-click="edit()"
-            >
-              <span class="glyphicon glyphicon-stop"></span> Edit
-            </button>
-            <button
-              type="button"
-              class="btn btn-default navbar-btn"
-              ng-click="step()"
-            >
-              <span class="glyphicon glyphicon-forward"></span> Step
-            </button>
-          </div>
-        </div>
-
-        <div class="navbar-header navbar-right">
+    <div class="container">
+        <div class="navbar-header navbar-middle">
           <a
             href="https://github.com/Hunter-CS360/Godbolt2-0"
             class="navbar-brand"
+            style="color: aliceblue;"
             >Godbolt 2.0</a
           >
+        </div>
+
           <div class="navbar-head navbar-right">
-            <i class="fab fa-github btn btn-dark btn-lg" href="#" role="button">
+            <i class="fab fa-github btn btn-dark btn-lg" 
+            href="https://github.com/Hunter-CS360/Godbolt2-0" 
+            role="button">
               Github</i
             >
           </div>
-        </div>
+    </div>
       </div>
     </nav>
+
+
     <!--      Translator                       -->
     <div class="container">
         <div class="panel panel-primary">
+          
           <div class="panel-heading">Translator</div>
-          <div class="panel-body" style="height: 120px; overflow: scroll;">
-            <div class="row">
-              <div class="col-xs-12">Write your code</div>
+          <div class="panel-body" style="height: 200px; overflow: scroll;">
+            <div class="container">
+              <div class="col-xs-12">
+                <textarea style="
+                max-height: 500px;
+                font-size: 15px;
+              " name="sourceCode"  cols="85" rows="25 ">
+Add your C++ code here......
+
+
+
+
+                </textarea>
+              </div>
             </div>
           </div>
         </div>
@@ -141,6 +134,8 @@ main:
                         hidden
                         id="address_code"
                       >
+
+                    
                         <table class="table">
                           <thead>
                             <tr style="text-align: center;">
@@ -161,14 +156,15 @@ main:
                     <div class="col-xs-4">
                       <button
                         type="button"
-                        class="btn btn-success navbar-btn"
+                        
+                        class="btn btn-success btn"
                         ng-click="edit()"
                       >
                         <span class="glyphicon glyphicon-play"></span> Load
                       </button>
                       <button
                         type="button"
-                        class="btn btn-default navbar-btn"
+                        class="btn btn-default btn"
                         ng-click="load()"
                       >
                         <span class="glyphicon glyphicon-stop"></span> Edit
@@ -177,6 +173,9 @@ main:
                   </div>
                 </div>
               </div>
+
+
+
               <div class="panel panel-primary">
                 <div class="panel-heading">Function Table</div>
                 <div
@@ -203,6 +202,8 @@ main:
                   </div>
                 </div>
               </div>
+
+
               <div class="panel panel-primary">
                 <div class="panel-heading">Tips</div>
                 <div class="panel-body">
@@ -222,12 +223,15 @@ main:
                 </div>
               </div>
             </div>
+
+
             <div class="col-sm-6" style="padding: 5px;">
               <div class="row">
                 <div class="col-xs-12">
                   <div class="panel panel-primary">
                     <div class="panel-heading">
                       Register Panel - 64/32 bits (base10)
+                      <button class="btn  btn-success" id="step" style="float:right;">step</button>
                     </div>
                     <div class="panel-body" style="font-size: 15px;">
                       <div class="row">
@@ -286,6 +290,9 @@ main:
                   </div>
                 </div>
               </div>
+
+
+
               <div class="row">
                 <div class="col-xs-12">
                   <div class="panel panel-primary">
@@ -323,6 +330,27 @@ main:
                   </div>
                 </div>
               </div>
+
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">Input</div>
+                    <div
+                      class="panel-body"
+                    >
+                      <div class="container">
+                        <div class="col-xs-12">Enter a Value</div>
+                        <input>
+                        <button onclick="",
+                        id = "button-submit">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
               <div class="row">
                 <div class="col-xs-12">
                   <div class="panel panel-primary">
@@ -342,6 +370,8 @@ main:
           </div>
         </div>
       </div>
+
+      
       <div class="row" style="text-align: center;"></div>
     </div>
   </body>
